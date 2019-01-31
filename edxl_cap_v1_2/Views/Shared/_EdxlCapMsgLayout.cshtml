@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/capv1_2_refimp.css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="content-wrapper">
+            @Html.Partial("_EdxlHeader")
+        </div>
+    </header>
+    <!-- End of Header -->
+    <!-- AlertPick -->
+    <div class="content-wrapper">
+        @Html.Partial("_AlertPick")
+    </div>
+    <!-- End of SelectAlert -->
+
+    <!-- SelectInfo -->
+        <div class="content-wrapper">
+            @Html.Partial("_InfoPick")
+        </div>
+    <!-- End of SelectInfo -->
+
+    <!-- SelectArea -->
+        <div class="content-wrapper">
+            @Html.Partial("_AreaPick")
+        </div>
+    <!-- End of SelectArea -->
+
+    <!-- SelectResource -->
+        <div class="content-wrapper">
+            @Html.Partial("ResourcePick")
+        </div>
+    <!-- End of SelectResource -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="content-wrapper">
+            @Html.Partial("_EdxlFooter")
+        </div>
+    </footer>
+
+</body>
+</html>

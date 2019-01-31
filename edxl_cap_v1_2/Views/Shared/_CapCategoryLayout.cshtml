@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/capv1_2_refimp.css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="content-wrapper">
+            @Html.Partial("_EdxlHeader")
+        </div>
+    </header>
+    <!-- End of Header -->
+    <!-- edxlLeftColumn -->
+    <div id="edxlLeftColumn">
+        @Html.Partial("_CapLeftColumnPartial")
+    </div>
+    <!-- End of edxlLeftColumn -->
+    <!-- indexRightColumn-Content Body -->
+    <div id="indexRightColumn" style="position:relative">
+        @RenderBody()
+        @RenderSection("scripts", required: false)
+    </div>
+    <!-- End of edxlRightColumn-Content Body -->
+
+   
+
+    <!-- Footer -->
+    <footer>
+        <div class="content-wrapper" >
+            @Html.Partial("_EdxlFooter")
+        </div>
+    </footer>
+
+</body>
+</html>
