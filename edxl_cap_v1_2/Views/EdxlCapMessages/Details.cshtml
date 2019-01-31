@@ -1,0 +1,286 @@
+﻿@model edxl_cap_v1_2.Models.EdxlCapMessage
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_EdxlCapMessageLayout.cshtml";
+}
+
+<div align="left">
+    <h3>Details</h3>
+</div>
+
+<div>
+    <div align="left">
+        <h4>EDXL-CAP Message -- Alert</h4>
+    </div>
+    <hr style="background-color:black; height: 2px" />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectedAlertIndex)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SelectedAlertIndex)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Alert_Identifier)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Alert_Identifier)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sent)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sent)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Source)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Source)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Restriction)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Restriction)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Addresses)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Addresses)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Note)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Note)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.References)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.References)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Incidents)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Incidents)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.InfoIndex)
+        </dt>
+    </div>
+<div>
+    <div align="left">
+        <h4>EDXL-CAP Message -- Info</h4>
+    </div>
+    <hr style="background-color:black; height: 2px" />
+    </dl>
+    <dl class="dl-horizontal">
+        <dd>
+            @Html.DisplayFor(model => model.InfoIndex)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Language)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Language)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Event)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Event)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Audience)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Audience)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Effective)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Effective)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Onset)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Onset)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Expires)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Expires)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SenderName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SenderName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Headline)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Headline)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Instruction)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Instruction)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Web)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Web)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parameter)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parameter)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AreaIndex)
+        </dt>
+</div>
+<div>
+    <div align="left">
+        <h4>EDXL-CAP Message -- Area</h4>
+    </div>
+    <hr style="background-color:black; height: 2px" />
+    </dl>
+    <dl class="dl-horizontal">
+        <dd>
+            @Html.DisplayFor(model => model.AreaIndex)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AreaDesc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AreaDesc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Polygon)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Polygon)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Circle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Circle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Geocode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Geocode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Altitude)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Altitude)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ceiling)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ceiling)
+        </dd>
+</div>
+<div>
+    <div align="left">
+        <h4>EDXL-CAP Message -- Resource</h4>
+    </div>
+    <hr style="background-color:black; height: 2px" />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ResourceIndex)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ResourceIndex)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ResourceDesc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ResourceDesc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MimeType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MimeType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Size)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Size)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Uri)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Uri)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DerefUri)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DerefUri)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Digest)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Digest)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.AlertIndex">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

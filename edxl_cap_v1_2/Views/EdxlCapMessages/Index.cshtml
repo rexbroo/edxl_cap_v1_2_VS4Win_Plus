@@ -1,0 +1,270 @@
+﻿@model IEnumerable<edxl_cap_v1_2.Models.EdxlCapMessage>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_EdxlCapMessageLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.SelectedAlertIndex)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Alert_Identifier)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Sender)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Sent)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Source)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Restriction)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Addresses)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Code)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Note)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.References)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Incidents)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InfoIndex)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Language)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Event)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Audience)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Effective)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Onset)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Expires)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SenderName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Headline)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Instruction)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Web)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Contact)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Parameter)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AreaIndex)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AreaDesc)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Polygon)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Circle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Geocode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Altitude)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ceiling)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ResourceIndex)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ResourceDesc)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MimeType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Size)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Uri)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DerefUri)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Digest)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SelectedAlertIndex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Alert_Identifier)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Source)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Restriction)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Addresses)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.References)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Incidents)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InfoIndex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Language)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Audience)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EventCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Effective)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Onset)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Expires)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SenderName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Headline)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Instruction)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Web)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Parameter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AreaIndex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AreaDesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Polygon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Circle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Geocode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Altitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ceiling)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResourceIndex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResourceDesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MimeType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Uri)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DerefUri)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Digest)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AlertIndex">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AlertIndex">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AlertIndex">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

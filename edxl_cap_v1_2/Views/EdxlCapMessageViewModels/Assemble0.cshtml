@@ -1,0 +1,65 @@
+﻿@model edxl_cap_v1_2.Models.ContentViewModels.EdxlCapMessageViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Assemble EDXL-CAP Message</title>
+</head>
+@{
+    <h4>Alert</h4>
+
+    <div class="select_container">
+        <form asp-controller="Alerts" asp-action="Details" method="post">
+            <select class="cap_select" id="cap_select" style="width:100%;max-width:95%;"
+            asp-for="SelectedAlertIndex" asp-items="@Model.Alert_Identifiers">
+                <option>Select one</option>
+            </select>
+            <br />
+            <input type="submit" name="Details" value="LoadAlert" />
+        </form>
+    </div>
+}
+
+@{
+    <h4>Info</h4>
+
+    <form asp-controller="Infos" asp-action="Details" method="post">
+        <select class="cap_select" id="cap_select" style="width:100%;max-width:95%;"
+        asp-for="SelectedAlertIndex" asp-items="@Model.Alert_Identifiers">
+            <option>Select one</option>
+        </select>
+        <br />
+        <input type="submit" name="Details" value="LoadInfo" />
+    </form>
+}
+
+@{
+    <h4>Area</h4>
+
+    <form asp-controller="Areas" asp-action="Details" method="post">
+        <select class="cap_select" id="cap_select" style="width:100%;max-width:95%;"
+        asp-for="SelectedAlertIndex" asp-items="@Model.Alert_Identifiers">
+            <option>Select one</option>
+        </select>
+        <br />
+        <input type="submit" name="Details" value="LoadArea" />
+    </form>
+}
+
+@{
+    <h4>Resource</h4>
+
+    <form asp-controller="Resources" asp-action="Details" method="post">
+        <select class="cap_select" id="cap_select" style="width:100%;max-width:95%;"
+        asp-for="SelectedAlertIndex" asp-items="@Model.Alert_Identifiers">
+            <option>Select one</option>
+        </select>
+        <br />
+        <input type="submit" name="Details" value="LoadResource" />
+    </form>
+}
